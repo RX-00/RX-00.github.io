@@ -22,7 +22,3 @@ The robots are given a wide variety of tasks, such as collecting certain game pi
     1st place in Global Competition, 2015
     3rd place in Global Competition 2016
     6th place in Global Competition 2018
-
-Botball was my first endeavor into robotics, and I learned and grew a lot from the experience.
-
-![Botball2](/assets/images/portfolio/botball2.jpg){:class="project-img"}
