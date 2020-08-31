@@ -3,10 +3,10 @@ owner: Roy Xing
 email: roy@massrobotics.org
 description: My portfolio website
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://RX-00.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://rx-00.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 language: en
 twitter_username:
-github_username:
+github_username: RX-00
 disqus_username: 
 
 # Build settings
