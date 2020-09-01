@@ -5,8 +5,10 @@ cover: /assets/images/portfolio/roy/Mitsubishi_Arms.jpg
 key: arms
 ---
 
-Description of setting up and maintaining cobots (URs, Sawyer, mitsubishi assista) and industrial arms (mitsubishi)
+Some of the industrial and co-bot arms I set up and maintain / program at MassRobotics!
+EX: (super new and cool) Mitsubishi Assista Co-bot, UR arms, Mitsubishi industrial arms, Sawyers, etc.
 
+Some pics:
 
 ![more arms](/assets/images/portfolio/roy/Sawyer.JPG){:class="project-img"}
 
