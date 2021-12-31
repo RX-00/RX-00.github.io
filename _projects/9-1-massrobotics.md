@@ -5,7 +5,7 @@ cover: /assets/images/portfolio/roy/massrobotics.png
 key: massrobotics
 ---
 
-My current workplace as of fall 2019!! I love it here, the community is amazing and all the crazy
+My current workplace as of fall 2019! I love it here, the community is amazing and all the crazy
 new robotics research and industry advancements is awe-inspiring. I really recommend to drop by
 and visit the space (when this virus is gone of course!). I help out the startups here kinda like
 a consultant or contractor. When I'm not doing that I act as the assistant lab manager, keeping
