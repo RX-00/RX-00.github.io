@@ -1,6 +1,6 @@
 title: Roy Xing
 owner: Roy Xing
-email: roy@massrobotics.org
+email: royx@bu.edu
 description: My portfolio website
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rx-00.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -15,7 +15,7 @@ markdown: kramdown
 
 permalink: /:year/:month/:day/:title/
 
-gems:
+plugins:
   - jekyll-feed
 exclude:
   - Gemfile
