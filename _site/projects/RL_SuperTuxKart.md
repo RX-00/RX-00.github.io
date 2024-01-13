@@ -1,13 +1,3 @@
----
-layout: post
-title:  "SuperTuxKart RL Agent Jupyter Notebook"
-date:   2021-12-07 01:03:29 +0200
-categories: update
-comments: false
----
-
-### Just a test to put the Jupyter Notebook for my SuperTuxKart RL agent project into a blog post.
-
 #**EC418 Fall 2022 Final Project: PPO SuperTuxKart**
 
 **Goal:** Get an RL agent to learn how to play SuperTuxKart by getting as far as it can on a given track.
@@ -29,7 +19,29 @@ comments: false
 !pip install gym==0.21.0 > /dev/null 2>&1
 !pip install -U ray > /dev/null 2>&1
 !pip install imageio==2.4.1 > /dev/null 2>&1
+```
 
+    Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+    Collecting PySuperTuxKart
+      Downloading PySuperTuxKart-1.1.2-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (4.4 MB)
+    [K     |████████████████████████████████| 4.4 MB 4.2 MB/s 
+    [?25hCollecting PySuperTuxKartData
+      Downloading PySuperTuxKartData-1.0.0.tar.gz (2.6 kB)
+      Installing build dependencies ... [?25l[?25hdone
+      Getting requirements to build wheel ... [?25l[?25hdone
+        Preparing wheel metadata ... [?25l[?25hdone
+    Requirement already satisfied: requests in /usr/local/lib/python3.8/dist-packages (from PySuperTuxKartData->PySuperTuxKart) (2.23.0)
+    Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests->PySuperTuxKartData->PySuperTuxKart) (2022.9.24)
+    Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/local/lib/python3.8/dist-packages (from requests->PySuperTuxKartData->PySuperTuxKart) (1.24.3)
+    Requirement already satisfied: chardet<4,>=3.0.2 in /usr/local/lib/python3.8/dist-packages (from requests->PySuperTuxKartData->PySuperTuxKart) (3.0.4)
+    Requirement already satisfied: idna<3,>=2.5 in /usr/local/lib/python3.8/dist-packages (from requests->PySuperTuxKartData->PySuperTuxKart) (2.10)
+    Building wheels for collected packages: PySuperTuxKartData
+      Building wheel for PySuperTuxKartData (PEP 517) ... [?25l[?25hdone
+      Created wheel for PySuperTuxKartData: filename=PySuperTuxKartData-1.0.0-py3-none-any.whl size=620700391 sha256=ccba3ca39b772aef18a40074f405d853bacbb8c7d5f4b80350740fcf6cd33357
+      Stored in directory: /root/.cache/pip/wheels/58/6b/b7/6b714bf378c4149d2ec72f61ef186e92902085c3cf43ac531e
+    Successfully built PySuperTuxKartData
+    Installing collected packages: PySuperTuxKartData, PySuperTuxKart
+    Successfully installed PySuperTuxKart-1.1.2 PySuperTuxKartData-1.0.0
 
 
 #####**Mounting to Drive for Saving Results**
@@ -90,7 +102,13 @@ def prepare_video(video: "np.ndarray") -> "np.ndarray":
         video = np.transpose(video, axes=(2, 0, 4, 1, 5, 3))
         video = np.reshape(video, newshape=(t, n_rows * h, n_cols * w, c))
         return video
+```
 
+    Imageio: 'ffmpeg-linux64-v3.3.1' was not found on your computer; downloading it now.
+    Try 1. Download from https://github.com/imageio/imageio-binaries/raw/master/ffmpeg/ffmpeg-linux64-v3.3.1 (43.8 MB)
+    Downloading: 8192/45929032 bytes (0.0%)2678784/45929032 bytes (5.8%)6946816/45929032 bytes (15.1%)11132928/45929032 bytes (24.2%)15499264/45929032 bytes (33.7%)19734528/45929032 bytes (43.0%)23945216/45929032 bytes (52.1%)28139520/45929032 bytes (61.3%)32243712/45929032 bytes (70.2%)36626432/45929032 bytes (79.7%)41000960/45929032 bytes (89.3%)45301760/45929032 bytes (98.6%)45929032/45929032 bytes (100.0%)
+      Done
+    File saved as /root/.imageio/ffmpeg/ffmpeg-linux64-v3.3.1.
 
 
 #####make_video function based on the rollout data
