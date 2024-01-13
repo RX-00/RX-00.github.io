@@ -2,6 +2,12 @@
 
 Custom jekyll theme I made for my personal website. 
 
+## TODOS
+[] Add RL Project, link jupyter notebook (and or host on your website)
+    [] Change video to gif
+[] Change EXT RL gif to the non-nominal environment one
+[] Add Clearpath Robots
+[] Rename project filenames to reflect their dates.
 
 ## Installation
 Make sure to have jekyll installed. Then, navigate to the directory and run:
