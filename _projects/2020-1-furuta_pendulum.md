@@ -1,8 +1,10 @@
 ---
 title: Furuta Pendulum
-description: Render of the furuta pendulum I built. TODO take a picture of the real thing
-cover: /assets/images/portfolio/roy/furuta_pendulum_onshape.jpeg
+description: Energy Shaping & LQR for Furuta Pendulum
+cover: /assets/images/portfolio/roy/fur_pend.png
 key: furuta_pendulum
 ---
 
-Description of furuta pendulum
+OnShape Render:
+
+![fur_render](/assets/images/portfolio/roy/furuta_pendulum_onshape.jpeg)

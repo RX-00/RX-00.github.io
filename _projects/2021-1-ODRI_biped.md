@@ -5,5 +5,5 @@ cover: /assets/images/portfolio/roy/odri_biped.jpg
 key: odri
 ---
 
-Description of ODRI biped
+Still working on the MuJoCo simulation and control!
 
