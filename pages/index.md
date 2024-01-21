@@ -17,4 +17,14 @@ I like robots 🤖.
 -"""""""""-"-
 |,,,,,,,,,|,|
 ```
-Check out my projects and CV for more information!
+
+Check out my Projects page and CV for more information for my research & robot projects!
+
+
+  
+-----------------------------------------------------
+
+
+Favorite Real Robot: Digit from Agility Robotics
+
+Favorite Fictional Robot: BMO (Be More) from Adventure Time
