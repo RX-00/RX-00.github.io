@@ -39,8 +39,8 @@ h2 { font-size: 1.5rem; }
   gap: 24px;
   padding: 56px 0 48px;
 }
-.site-name { font-size: 2rem; line-height: 1.2; letter-spacing: -.06rem; text-decoration: none; color: var(--accent); }
-.site-name span { color: var(--accent); }
+.site-name { font-size: 2rem; line-height: 1.2; letter-spacing: -.06rem; text-decoration: none; color: var(--ink); }
+.site-name span { color: var(--ink); }
 nav { display: flex; gap: 28px; font-size: 16px; }
 nav a { color: var(--accent); text-decoration: none; }
 nav a:hover, nav a[aria-current="page"] { color: var(--accent); text-decoration: underline; }
@@ -76,7 +76,7 @@ figcaption { font-size: .8rem; line-height: 1.5; color: var(--muted); margin-top
   to { transform: translateX(calc(-50% - var(--banner-gap) / 2)); }
 }
 .updates { margin: 0; padding-top: 0; }
-.updates h2 { color: var(--accent); margin: 0 0 20px; }
+.updates h2 { color: var(--ink); margin: 0 0 20px; }
 .updates ul { list-style: none; padding: 0; margin: 0; }
 .updates li { display: grid; grid-template-columns: 102px minmax(0, 1fr); gap: 16px; margin-bottom: 12px; font-size: 16px; line-height: 1.65; }
 .updates time { color: var(--muted); font-size: 14px; padding-top: 2px; font-variant-numeric: tabular-nums; white-space: nowrap; }
