@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1743383406 "/home/roy/Documents/RX-00.github.io/assets/resume.tex" "resume.pdf" "resume" 1743383406
+["pdflatex"] 1746670829 "/home/roy/Documents/RX-00.github.io/assets/resume.tex" "resume.pdf" "resume" 1746670829
   "/etc/texmf/web2c/texmf.cnf" 1720473208 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/roy/Documents/RX-00.github.io/assets/resume.tex" 1743383405 10667 5f478b6534907e3c4754844579e87bd6 ""
+  "/home/roy/Documents/RX-00.github.io/assets/resume.tex" 1746670828 10707 d6badf4ca6eabe27b57a6b342c5bfbdb ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -87,9 +87,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1726262747 4073795 a82a847ac97773bf4a607ab050efa3a1 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1720473217 1435972 2a181ea755bf6ae01f187e0fb51ab9bc ""
-  "resume.aux" 1743383406 1348 0d618098fbbc912a4618d02d27345e34 "pdflatex"
-  "resume.out" 1743383406 721 1cdd3a1b8010fa0f53083c1c2a56769e "pdflatex"
-  "resume.tex" 1743383405 10667 5f478b6534907e3c4754844579e87bd6 ""
+  "resume.aux" 1746670829 1348 0d618098fbbc912a4618d02d27345e34 "pdflatex"
+  "resume.out" 1746670829 721 1cdd3a1b8010fa0f53083c1c2a56769e "pdflatex"
+  "resume.tex" 1746670828 10707 d6badf4ca6eabe27b57a6b342c5bfbdb ""
   (generated)
   "resume.aux"
   "resume.log"
