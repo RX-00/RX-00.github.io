@@ -65,9 +65,12 @@ def fetch_publications(fetch=None):
     publications = []
     seen = set()
     for start in range(0, 10000, 100):
-        url = "https://scholar.google.com/citations?" + urlencode({
-            "user": PROFILE_ID, "hl": "en", "pagesize": 100, "sortby": "pubdate", "cstart": start,
-        })
+        # Request the public profile, without the interactive sort endpoint.
+        # We collect all pages and sort by publication year locally.
+        params = {"user": PROFILE_ID, "hl": "en", "pagesize": 100}
+        if start:
+            params["cstart"] = start
+        url = "https://scholar.google.com/citations?" + urlencode(params)
         batch, more = parse_profile(fetch(url))
         added = 0
         for paper in batch:
