@@ -15,7 +15,7 @@ Open a file in GitHub, click the pencil, make your changes, and commit them to
 | News and updates | `home/updates.md` |
 | Email, GitHub, and Substack links | `home/contact.md` |
 | Research page introduction | `research/index.md` |
-| Publications | Automatically imported into `research/publications.md` |
+| Publications | `research/publications.md` |
 | CV | Replace **`cv/cv.pdf`**, keeping that filename |
 | Projects page heading | `projects/index.md` |
 | Project titles and captions | One Markdown file per project in `projects/items/` |
@@ -57,22 +57,24 @@ The gallery shows images, titles, and captions; it has no popups or detail pages
 The two existing animated images have `-still.webp` companions, shown to visitors
 who prefer reduced motion. Existing images have been optimized for the web.
 
-### Automatic research updates
+### Add or update a publication
 
-The workflow checks [Google Scholar](https://scholar.google.com/citations?user=dq-VzqkAAAAJ&hl=en)
-every Monday, on pushes, and when run manually. It imports the full publication
-list, groups it by year, and links arXiv entries directly to the papers. Other
-entries link to their Scholar record. No API keys are needed.
+Edit `research/publications.md` directly. Publications appear in file order,
+grouped under year headings. Copy an existing entry or use this format:
 
-`research/publications.md` is the saved publication list and is committed when it
-changes. It will be overwritten by the next successful refresh; put your own
-research introduction in `research/index.md` instead. Google sometimes blocks
-automated requests. If that happens, the workflow logs a warning and publishes
-the last saved list instead of breaking the website or erasing publications.
-You can run **Actions → Build and deploy website → Run workflow** to retry.
+```markdown
+## 2026
 
-GitHub may disable scheduled workflows in public repositories after 60 days
-without activity. Re-enable the workflow in the Actions tab if that happens.
+### [Paper title](https://arxiv.org/abs/your-paper)
+
+Author names
+
+Conference, journal, or preprint information
+```
+
+Add papers under the appropriate year, with newer years first. Your research
+introduction lives in `research/index.md`. The Google Scholar link remains on the
+research page, but there is no automatic import to overwrite your edits.
 
 ### Run locally
 
@@ -93,7 +95,6 @@ after dependencies are installed. `_site/` is generated; do not edit it.
 Optional checks:
 
 ```sh
-python scripts/sync_scholar.py
 python scripts/build.py
 python -m unittest discover -s tests -v
 ```

@@ -4,8 +4,6 @@ on:
   push:
     branches: [master]
   pull_request:
-  schedule:
-    - cron: '17 9 * * 1'
   workflow_dispatch:
 
 concurrency:
@@ -18,8 +16,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -28,25 +24,10 @@ jobs:
           cache: pip
       - name: Install build dependencies
         run: python -m pip install -r requirements.txt
-      - name: Refresh Google Scholar publications
-        if: github.event_name != 'pull_request'
-        run: python scripts/sync_scholar.py --allow-cached
       - name: Build the site
         run: python scripts/build.py
-      - name: Check pages and publication refresh behavior
+      - name: Check pages
         run: python -m unittest discover -s tests -v
-      - name: Save refreshed publications
-        if: github.event_name != 'pull_request'
-        env:
-          BRANCH_NAME: ${{ github.ref_name }}
-        run: |
-          if ! git diff --quiet -- research/publications.md; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add research/publications.md
-            git commit -m "Refresh Google Scholar publications"
-            git push origin "HEAD:$BRANCH_NAME"
-          fi
       - name: Upload website
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v4
