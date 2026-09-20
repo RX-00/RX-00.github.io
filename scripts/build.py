@@ -58,6 +58,13 @@ def home():
     caption = figure.find_all("p")[-1].decode_contents()
     intro = render(ROOT / "home/index.md", "home")
     updates = render(ROOT / "home/updates.md", "home")
+    banner_text = escape((ROOT / "home/banner.txt").read_text(encoding="utf-8").strip())
+    banner = f'''<div class="ascii-banner" aria-hidden="true">
+  <div class="ascii-banner-track">
+    <pre>{banner_text}</pre>
+    <pre>{banner_text}</pre>
+  </div>
+</div>'''
     updates.h2["id"] = "updates-heading"
     for item in updates.select("li"):
         date = item.find("strong")
@@ -88,6 +95,7 @@ def home():
   <figure id="figure-1">{img}<figcaption>{caption}</figcaption></figure>
   <div class="intro-copy">{intro}</div>
 </section>
+{banner}
 <section class="updates" aria-labelledby="updates-heading">{updates}</section>'''
 
 

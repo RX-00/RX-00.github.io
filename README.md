@@ -12,6 +12,7 @@ Open a file in GitHub, click the pencil, make your changes, and commit them to
 | --- | --- |
 | Introductory paragraph | `home/index.md` |
 | BMO image and its caption | `home/figure.md` and `home/images/` |
+| Animated ASCII banner | `home/banner.txt` |
 | News and updates | `home/updates.md` |
 | Email, GitHub, and Substack links | `home/contact.md` |
 | Research page introduction | `research/index.md` |
