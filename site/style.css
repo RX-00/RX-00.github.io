@@ -1,6 +1,6 @@
 :root {
   color-scheme: light;
-  --paper: #fcfbf8;
+  --paper: #f7f4ec;
   --ink: #282d2c;
   --muted: #646d68;
   --accent: #356858;
@@ -40,7 +40,7 @@ h2 { font-size: 1.5rem; }
   padding: 56px 0 48px;
 }
 .site-name { font-size: 2rem; line-height: 1.2; letter-spacing: -.06rem; text-decoration: none; color: var(--ink); }
-.site-name span { color: var(--ink); }
+.site-name span { color: var(--accent); }
 nav { display: flex; gap: 28px; font-size: 16px; }
 nav a { color: var(--accent); text-decoration: none; }
 nav a:hover, nav a[aria-current="page"] { color: var(--accent); text-decoration: underline; }
