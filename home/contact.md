@@ -1,0 +1,3 @@
+- [Email](mailto:roy.xing.gr@dartmouth.edu)
+- [GitHub](https://github.com/RX-00)
+- [Substack](https://substack.com/@royxing)
