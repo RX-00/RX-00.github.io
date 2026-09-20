@@ -47,7 +47,7 @@ class WebsiteTests(unittest.TestCase):
 
     def test_accessible_home_structure(self):
         soup = BeautifulSoup((OUTPUT / "index.html").read_text(), "html.parser")
-        self.assertGreater(len(soup.select(".intro-copy > p")), 0)
+        self.assertEqual(len(soup.select(".intro-copy > p")), 3)
         self.assertGreater(len(soup.select(".updates li time[datetime]")), 0)
         self.assertEqual(len(soup.select("figure#figure-1 figcaption")), 1)
         self.assertEqual([a.get("aria-label") for a in soup.select(".contact a")], ["Email", "GitHub", "Substack"])
