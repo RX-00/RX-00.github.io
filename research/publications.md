@@ -8,6 +8,8 @@ R Xing, S Ree, B Plancher
 
 CoRL 2026
 
+[project website](https://a2r-lab.org/MPC-Injection/)
+
 arXiv preprint arXiv:2606.26392
 
 ### [ASCII Art Turns LLMs into VLA Controllers](https://arxiv.org/abs/2606.21470)
